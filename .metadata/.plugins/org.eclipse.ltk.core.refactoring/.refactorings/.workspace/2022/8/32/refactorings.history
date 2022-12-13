@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;18-hehavior-pattern&apos; to &apos;18-behavior-pattern&apos;" description="Rename resource &apos;18-hehavior-pattern&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/18-hehavior-pattern" name="18-behavior-pattern" stamp="1659354886777" updateReferences="true"/>
+</session>

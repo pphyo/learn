@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="sale-layout" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pos.controller.SaleHome">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="1180.0" styleClass="back1">
+         <children>
+            <HBox alignment="CENTER_LEFT" styleClass="header">
+               <children>
+                  <SVGPath content="M0 3.125v31.25h50v-31.25h-50zM46.875 31.25h-43.75v-25h43.75v25zM32.813 37.5h-15.625l-1.563 6.25-3.125 3.125h25l-3.125-3.125zM0 3.125v31.25h50v-31.25h-50zM46.875 31.25h-43.75v-25h43.75v25zM32.813 37.5h-15.625l-1.563 6.25-3.125 3.125h25l-3.125-3.125z" />
+                  <Label text="MINI POS">
+                     <styleClass>
+                        <String fx:value="fs30" />
+                        <String fx:value="text-white" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="controlBox" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="70.0" prefWidth="275.0" style="-fx-alignment: center-right; -fx-font-size: 20px;" styleClass="header">
+                     <children>
+                        <SVGPath content="M10 20c-5.523 0-10-4.477-10-10s4.477-10 10-10v0c5.523 0 10 4.477 10 10s-4.477 10-10 10v0zM7 6v2c0 1.657 1.343 3 3 3s3-1.343 3-3v0-2c0-1.657-1.343-3-3-3s-3 1.343-3 3v0zM3.35 14.44c1.456 2.155 3.89 3.553 6.65 3.553s5.194-1.398 6.632-3.525l0.018-0.028c-1.951-0.918-4.238-1.453-6.65-1.453s-4.699 0.536-6.748 1.495l0.098-0.041zM10 20c-5.523 0-10-4.477-10-10s4.477-10 10-10v0c5.523 0 10 4.477 10 10s-4.477 10-10 10v0zM7 6v2c0 1.657 1.343 3 3 3s3-1.343 3-3v0-2c0-1.657-1.343-3-3-3s-3 1.343-3 3v0zM3.35 14.44c1.456 2.155 3.89 3.553 6.65 3.553s5.194-1.398 6.632-3.525l0.018-0.028c-1.951-0.918-4.238-1.453-6.65-1.453s-4.699 0.536-6.748 1.495l0.098-0.041z" />
+                        <Label fx:id="username" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pos" onMouseClicked="#showPos" prefHeight="70.0" prefWidth="124.0" style="-fx-font-size: 20px;" styleClass="header">
+                     <children>
+                        <SVGPath content="M13 17c0 1.104 0.894 2 2 2 1.104 0 2-0.896 2-2 0-1.106-0.896-2-2-2-1.106 0-2 0.894-2 2zM3 17c0 1.104 0.895 2 2 2 1.103 0 2-0.896 2-2 0-1.106-0.897-2-2-2-1.105 0-2 0.894-2 2zM6.547 12.172l11.068-3.162c0.211-0.061 0.385-0.289 0.385-0.51v-5.5h-14v-1.6c0-0.22-0.181-0.4-0.399-0.4h-3.202c-0.219 0-0.399 0.18-0.399 0.4v1.6h2l1.91 8.957 0.090 0.943v1.649c0 0.219 0.18 0.4 0.4 0.4h13.2c0.22 0 0.4-0.182 0.4-0.4v-1.549h-11.248c-1.15 0-1.174-0.551-0.205-0.828zM13 17c0 1.104 0.894 2 2 2 1.104 0 2-0.896 2-2 0-1.106-0.896-2-2-2-1.106 0-2 0.894-2 2zM3 17c0 1.104 0.895 2 2 2 1.103 0 2-0.896 2-2 0-1.106-0.897-2-2-2-1.105 0-2 0.894-2 2zM6.547 12.172l11.068-3.162c0.211-0.061 0.385-0.289 0.385-0.51v-5.5h-14v-1.6c0-0.22-0.181-0.4-0.399-0.4h-3.202c-0.219 0-0.399 0.18-0.399 0.4v1.6h2l1.91 8.957 0.090 0.943v1.649c0 0.219 0.18 0.4 0.4 0.4h13.2c0.22 0 0.4-0.182 0.4-0.4v-1.549h-11.248c-1.15 0-1.174-0.551-0.205-0.828z" />
+                        <Label text="Show POS" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="report" layoutX="705.0" layoutY="10.0" onMouseClicked="#showReport" prefHeight="70.0" prefWidth="136.0" style="-fx-font-size: 20px;" styleClass="header">
+                     <children>
+                        <SVGPath content="M14.4 9h-5.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h5.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM16.4 14h-7.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h7.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM8.6 6h7.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1h-7.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1zM5.4 9h-1.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h1.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM5.4 14h-1.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h1.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM5.4 4h-1.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h1.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM14.4 9h-5.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h5.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM16.4 14h-7.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h7.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM8.6 6h7.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1h-7.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1zM5.4 9h-1.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h1.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM5.4 14h-1.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h1.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM5.4 4h-1.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h1.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1z" />
+                        <Label text="Show Report" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="close" prefHeight="70.0" prefWidth="63.0" style="-fx-font-size: 20px;" styleClass="header">
+                     <children>
+                        <SVGPath content="M4.16 4.16l1.42 1.42c-1.585 1.292-2.588 3.244-2.588 5.43 0 3.86 3.13 6.99 6.99 6.99 0.006 0 0.013 0 0.019-0h-0.001c3.862-0.006 6.99-3.137 6.99-7 0-2.18-0.996-4.127-2.558-5.41l-0.012-0.010 1.42-1.42c1.936 1.661 3.155 4.11 3.155 6.844 0 4.971-4.029 9-9 9s-9-4.029-9-9c0-2.734 1.219-5.183 3.143-6.834l0.012-0.010zM9 0h2v8h-2v-8zM4.16 4.16l1.42 1.42c-1.585 1.292-2.588 3.244-2.588 5.43 0 3.86 3.13 6.99 6.99 6.99 0.006 0 0.013 0 0.019-0h-0.001c3.862-0.006 6.99-3.137 6.99-7 0-2.18-0.996-4.127-2.558-5.41l-0.012-0.010 1.42-1.42c1.936 1.661 3.155 4.11 3.155 6.844 0 4.971-4.029 9-9 9s-9-4.029-9-9c0-2.734 1.219-5.183 3.143-6.834l0.012-0.010zM9 0h2v8h-2v-8z" />
+                        <Label text="Quit" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <StackPane fx:id="contentView" prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+         </padding></StackPane>
+   </children>
+   <stylesheets>
+      <URL value="@../layout.css" />
+      <URL value="@../application.css" />
+   </stylesheets>
+</VBox>

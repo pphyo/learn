@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.jdc.stream.Person&apos; to &apos;User&apos;&#x0D;&#x0A;- Original project: &apos;api-stream&apos;&#x0D;&#x0A;- Original element: &apos;com.jdc.stream.Person&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jdc.stream.User&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Person&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.jdc.stream{Person.java[Person" matchStrategy="1" name="User" qualified="false" references="true" similarDeclarations="false" stamp="1667132098753" textual="false" version="1.0"/>
+</session>

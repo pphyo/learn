@@ -1,0 +1,5 @@
+package com.jdc.bean;
+
+public class NameNotAdminValidator {
+
+}

@@ -1,0 +1,67 @@
+package com.jdc.que1;
+
+import java.util.Scanner;
+
+public class Question4 {
+	
+	private static Scanner sc = new Scanner(System.in);
+	
+	private static String[][] origin;
+	
+	public static void main(String[] args) {
+		
+//		dyArray();
+//		checkColor();
+//		sc.close();
+		
+		int[][] array = {{123, 213}, {30, 233}, {244, 90}};
+		
+		for(int i = 0; i < array.length; i++) {
+			for(int j = 0; j < array[i].length; j++) {
+				if(array[i][j] >= 128) {
+					System.out.print("1 ");
+				} else {
+					System.out.print("0 ");
+				}
+			}
+			System.out.println();
+		}
+		
+	}
+	
+	static void checkColor() {
+		for(int i = 0; i < origin.length; i++) {
+			
+			for(int j = 0; j < origin[i].length; j++) {
+	
+				String[] data = sc.nextLine().split(" ");
+				
+				for(int k = 0; k < data.length; k++) {
+				
+					origin[i][j] = data[i];
+				
+				}
+			}
+		}
+
+		System.out.println();
+		
+		for(int i = 0; i < origin.length; i++) {
+			for(int j = 0; j < origin[i].length; j++) {
+				if(Integer.parseInt(origin[i][j]) >= 128) {
+					System.out.print("1 ");
+				} else {
+					System.out.print("0 ");
+				}
+			}
+		}
+	}
+	
+	static void dyArray() {
+		System.out.print("Enter array index two digit with space: ");
+		String data = sc.nextLine();
+		String[] init = data.split(" ");
+		origin = new String[Integer.parseInt(init[0])][Integer.parseInt(init[1])];
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.jdc.stream;
+
+public class StreamApp {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox styleClass="cat-edit" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox>
+         <children>
+            <Label fx:id="title" styleClass="hText-acent" text="Add Category" />
+         </children>
+         <styleClass>
+            <String fx:value="login-header" />
+            <String fx:value="ali-cen" />
+            <String fx:value="color-primary" />
+         </styleClass>
+      </HBox>
+      <HBox styleClass="info">
+         <children>
+            <Label fx:id="message" />
+         </children>
+      </HBox>
+      <GridPane hgap="25.0" styleClass="login-form" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="67.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="268.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name" />
+            <TextField fx:id="catName" GridPane.columnIndex="1" />
+            <HBox styleClass="login-btn-holder" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#close" text="CLOSE" />
+                  <Button mnemonicParsing="false" onAction="#save" text="SAVE" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

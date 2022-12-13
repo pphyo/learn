@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;primaryStage&apos; in &apos;com.solt.dyui.Main.start(...)&apos; to &apos;stage&apos;&#x0D;&#x0A;- Original project: &apos;dynamic-ui&apos;&#x0D;&#x0A;- Original element: &apos;com.solt.dyui.Main.start(Stage).primaryStage&apos;&#x0D;&#x0A;- Renamed element: &apos;primaryStage&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;primaryStage&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.solt.dyui{Main.java[Main~start~QStage;@primaryStage!239!256!245!256!QStage;!0!true" name="stage" references="true" stamp="1582820258808" version="1.0"/>
+</session>

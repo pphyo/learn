@@ -1,0 +1,18 @@
+package com.jdc.stream;
+
+public class ItemFactory {
+	
+	public static Item createByid(int id) {
+		Item item = new Item();
+		item.setId(id);
+		return item;
+	}
+	
+	public static Item createByIdAndName(int id, String name) {
+		Item item = new Item();
+		item.setId(id);
+		item.setName(name);
+		return item;
+	}
+
+}

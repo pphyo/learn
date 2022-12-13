@@ -1,0 +1,11 @@
+package com.jdc.pos.util;
+
+public class POSException extends RuntimeException {
+
+	private static final long serialVersionUID = 1L;
+
+	public POSException(String message) {
+		super(message);
+	}
+	
+}

@@ -1,0 +1,46 @@
+package com.jdc.que1;
+
+import java.util.Scanner;
+
+public class Question4 {
+	
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+
+		
+	}
+	
+	static void checkColor() {
+		System.out.print("Enter HW: ");
+		String[] index = sc.nextLine().split(" ");
+		
+		int row = toInt(index[0]);
+		int col = toInt(index[1]);
+		
+		String[][] array = new String[row][col];
+		
+		System.out.print("Enter value: ");
+		for(int i = 0; i < array.length; i++) {
+			
+			String[] value = sc.nextLine().split(" ");
+			
+			for(int j = 0; j < value.length; j++) {
+				array[i][j] = value[j];
+			}
+		}
+		
+		for(int i = 0; i < array.length; i++) {
+			for(int j = 0; j < array[i].length; j++) {
+				System.out.print(array[i][j]);
+			}
+			System.out.println();
+		}
+		
+	}
+	
+	static int toInt(String data) {
+		return Integer.parseInt(data);
+	}
+	
+}

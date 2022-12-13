@@ -1,0 +1,42 @@
+package com.jdc.que1;
+
+import java.io.Console;
+
+public class Question6 {
+	
+	private static Console con = System.console();
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	static void compute() {
+		System.out.print("Enter time: ");
+		String[] times = con.readLine().split(" ");
+		
+		int totalTimes = 0;
+		
+		for(int i = 0; i < times.length; i++) {
+			totalTimes += toInt(times[i]);
+		}
+		
+		System.out.print("How many trains will leave from: ");
+		int noOfTrains = toInt(con.readLine());
+		
+		int[] trainsTimes = new int[noOfTrains];
+		
+		for(int i = 0; i < noOfTrains; i++) {
+			String[] inside = con.readLine().split(" ");
+			trainsTimes[i] = toInt(inside[0] + inside[1]);
+		}
+		
+		for(int time : trainsTimes) {
+			System.out.println(time);
+		}
+		
+	}
+	
+	static int toInt(String data) {
+		return Integer.parseInt(data);
+	}
+}

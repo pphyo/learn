@@ -1,0 +1,17 @@
+package com.jdc.pos.controller;
+
+public class ProductManagement {
+
+	public void upload() {
+		
+	}
+	
+	public void search() {
+		
+	}
+	
+	public void clear() {
+		
+	}
+	
+}

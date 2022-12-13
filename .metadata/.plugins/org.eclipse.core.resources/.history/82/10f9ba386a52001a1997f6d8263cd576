@@ -1,0 +1,62 @@
+package com.jdc.que1;
+
+import java.util.Scanner;
+
+public class Question6 {
+	
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		compute();
+		sc.close();
+	}
+	
+	static void compute() {
+		
+		String officeTime = "9 00";
+		String shouldLeave = "";
+		
+		System.out.print("Enter time: ");
+		String[] times = sc.nextLine().split(" ");
+		
+		int totalTimes = 0;
+		
+		for(int i = 0; i < times.length; i++) {
+			totalTimes += toInt(times[i]);
+		}
+		
+		System.out.print("How many trains will leave from: ");
+		int noOfTrains = toInt(sc.nextLine());
+		
+		String[] trainsTimes = new String[noOfTrains];
+		
+		for(int i = 0; i < noOfTrains; i++) {
+			trainsTimes[i] = sc.nextLine();
+		}
+		
+		for(int i = 0; i < trainsTimes.length; i++) {
+			boolean condition = (splitMinute(officeTime) - splitMinute(trainsTimes[i]))
+													< totalTimes;
+			if(condition) {
+				shouldLeave = trainsTimes[i];
+			}
+		}
+		
+		String[] output = shouldLeave.split(" ");
+		System.out.print("You show leave in ");
+		
+		System.out.print(output[0] + ":" + output[1] + " hours.\n");
+		
+		System.out.println(splitMinute(officeTime));
+		
+	}
+	
+	static int splitMinute(String data) {
+		String[] array = data.split(" ");
+		return (int)(Math.pow(60, toInt(array[0])) + toInt(array[1]));
+	}
+	
+	static int toInt(String data) {
+		return Integer.parseInt(data);
+	}
+}

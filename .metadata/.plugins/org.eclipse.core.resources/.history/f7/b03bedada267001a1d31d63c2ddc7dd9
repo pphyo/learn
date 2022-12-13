@@ -1,0 +1,34 @@
+package com.jdc.pos.controller;
+
+import com.jdc.pos.entity.Category;
+import com.jdc.pos.entity.Product;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+
+public class ProductManagement {
+	
+	private ComboBox<Category> catName;
+	private TextField itemName;
+	private TableView<Product> list;
+	
+	@FXML
+	private void initialize() {
+		catName.getItems().addAll(Category.values());
+	}
+
+	public void upload() {
+		
+	}
+	
+	public void search() {
+		
+	}
+	
+	public void clear() {
+		
+	}
+	
+}

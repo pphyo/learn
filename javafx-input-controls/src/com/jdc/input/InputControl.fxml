@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdc.input.InputControl">
+   <children>
+      <Label layoutX="240.0" layoutY="14.0" text="Input Controls">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf" layoutX="45.0" layoutY="91.0" prefHeight="25.0" prefWidth="180.0" promptText="Enter Text" />
+      <PasswordField fx:id="pf" layoutX="45.0" layoutY="134.0" prefHeight="25.0" prefWidth="180.0" promptText="Enter Password" />
+      <TextArea fx:id="ta" layoutX="45.0" layoutY="178.0" prefHeight="71.0" prefWidth="180.0" promptText="TextArea" />
+      <RadioButton fx:id="male" layoutX="45.0" layoutY="278.0" mnemonicParsing="false" selected="true" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="123.0" layoutY="278.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+      <CheckBox fx:id="read" layoutX="45.0" layoutY="332.0" mnemonicParsing="false" text="Reading" />
+      <CheckBox fx:id="code" layoutX="125.0" layoutY="332.0" mnemonicParsing="false" text="Coding" />
+      <CheckBox fx:id="swim" layoutX="200.0" layoutY="332.0" mnemonicParsing="false" text="Swimming" />
+      <Slider fx:id="slider" layoutX="45.0" layoutY="371.0" prefHeight="14.0" prefWidth="241.0" />
+      <Spinner fx:id="spinner" layoutX="45.0" layoutY="406.0" prefHeight="25.0" prefWidth="180.0" />
+      <Button layoutX="350.0" layoutY="454.0" mnemonicParsing="false" onAction="#show" prefWidth="80.0" text="SHOW" />
+      <Button layoutX="446.0" layoutY="454.0" mnemonicParsing="false" onAction="#clear" prefWidth="80.0" text="CLEAR" />
+      <Label fx:id="tfLbl" layoutX="389.0" layoutY="95.0" text="Label" />
+      <Label fx:id="pfLbl" layoutX="389.0" layoutY="138.0" text="Label" />
+      <Label fx:id="taLbl" layoutX="389.0" layoutY="197.0" text="Label" />
+      <Label fx:id="radiosLbl" layoutX="389.0" layoutY="278.0" text="Label" />
+      <Label fx:id="checksLbl" layoutX="389.0" layoutY="332.0" text="Label" />
+      <Label fx:id="sliderLbl" layoutX="389.0" layoutY="370.0" text="Label" />
+      <Label fx:id="spinnerLbl" layoutX="389.0" layoutY="410.0" text="Label" />
+      <Button layoutX="541.0" layoutY="454.0" mnemonicParsing="false" onAction="#exit" prefWidth="80.0" text="EXIT" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,210 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+* {
+	p : #3d216c;
+	pl : #7d47bf;
+	s : #c21e5b;
+	sl : #ed75a5;
+	a : #f4cdfc;
+}
+
+.login-Frame {
+	-fx-pref-width: 500px;
+	-fx-pref-height: 300px;
+}
+
+.login-bar {
+	-fx-pref-width: 180px;
+	-fx-background-color: p;
+	-fx-alignment: center;
+	-fx-spacing: 10px;
+}
+
+.login-bar > Label {
+	-fx-text-fill: white;
+	-fx-font-size: 25px;
+	-fx-font-family: "Sitka Banner";
+}
+
+.login-header {
+	-fx-pref-height: 60px;
+	-fx-padding: 10px;
+	-fx-effect: dropshadow(gaussian, darkgrey, 0, 2, 2, 2);
+}
+
+.login-header > Label {
+	-fx-font-family: Serif;
+	-fx-font-weight: bold;
+	-fx-font-size: 27px;
+}
+
+.info {
+	-fx-pref-height: 25px;
+	-fx-alignment: center;
+	-fx-padding: 5px;
+}
+
+.info > Label {
+	-fx-text-fill: red;
+	-fx-font-size: 13px;
+	-fx-font-family: "Times New Roman";
+}
+
+.login-form {
+	-fx-padding: 0 30 0 10;
+}
+
+.login-form > Label {
+	-fx-font-size : 14px;
+	-fx-text-fill: p;
+}
+
+.login-btn-holder {
+	-fx-alignment: center-right;
+	-fx-spacing: 10px;
+}
+
+.mainFrame {
+	-fx-pref-width: 1060px;
+	-fx-pref-height: 590px;
+}
+
+.header {
+	-fx-pref-height: 60px;
+	-fx-alignment: center-left;
+	-fx-padding: 10 10 10 0;
+}
+
+.header > Label {
+	-fx-text-fill: p;
+	-fx-font-family: Serif;
+	-fx-font-weight: bold;
+	-fx-font-size: 30px;
+}
+
+.sideBar {
+	-fx-pref-width: 200px;
+	-fx-background-color: p;
+}
+
+.sideBar .logo {
+	-fx-pref-height: 130px;
+	-fx-alignment: center;
+	-fx-spacing: 5px;
+	-fx-padding: 10 0 10 0;
+}
+
+.side-menu {
+	-fx-pref-height: 55px;
+	-fx-padding: 10px;
+	-fx-spacing: 10px;
+	-fx-alignment: center-left;
+	-fx-cursor: hand;
+}
+
+.side-menu VBox{
+	-fx-alignment: center;
+	-fx-pref-width: 20px;
+}
+
+.side-menu:hover {
+	-fx-background-color: pl;
+}
+
+.side-menu > Label, SVGPath {
+	-fx-text-fill: a;
+	-fx-font-family: "Times New Roman";
+	-fx-font-size: 16px;
+	-fx-fill: a;
+}
+
+.side-menu.active {
+	-fx-background-color: a;
+}
+
+.side-menu.active SVGPath,
+.side-menu.active Label {
+	-fx-text-fill: p;
+	-fx-fill: p;
+}
+
+.content {
+	-fx-pref-width: 860px;
+	-fx-pref-height: 530px;
+	-fx-spacing: 10px;
+}
+
+.search-bar {
+	-fx-pref-height: 70px;
+	-fx-alignment: center-left;
+	-fx-spacing: 10px;
+	-fx-padding: 10px;
+	-fx-background-color: a;
+	-fx-effect: dropshadow(gaussian, darkgrey, 0, 2, 2, 2);
+}
+
+.cat-box-scroll {
+	-fx-pref-height: 440px;
+	-fx-pref-width: 790px;
+}
+
+.cat-box-container {
+	-fx-pref-height: 440px;
+	-fx-pref-width: 790px;
+}
+
+.cat-edit {
+	-fx-pref-width: 370px;
+	-fx-pref-height: 200px;
+}
+
+.ali-cen-lef {
+	-fx-alignment: center-left;
+}
+
+.ali-cen {
+	-fx-alignment: center;
+}
+
+.color-acent {
+	-fx-background-color: a;
+}
+
+.color-primary {
+	-fx-background-color: p;
+}
+
+.hText-acent {
+	-fx-text-fill : a;
+}
+
+.hText-primary {
+	-fx-text-fill : p;
+}
+
+TextField {
+	-fx-border-color: p;
+	-fx-border-width: 1px;
+	-fx-pref-width: 180px;
+}
+
+PasswordField {
+	-fx-border-color: p;
+}
+
+ComboBox {
+	-fx-border-color: p;
+}
+
+Button {
+	-fx-pref-width: 80px;
+	-fx-background-color: p;
+	-fx-text-fill: a;	
+	-fx-font-weight: bold;
+	-fx-cursor: hand;
+}
+
+Button:hover {
+	-fx-background-color: pl;
+	-fx-text-fill: a;
+}

@@ -1,0 +1,5 @@
+package com.jdc.pos.entity;
+
+public class Employee {
+
+}

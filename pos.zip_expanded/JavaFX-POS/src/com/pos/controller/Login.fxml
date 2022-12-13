@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<HBox onKeyPressed="#pressEnter" prefHeight="300.0" prefWidth="500.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pos.controller.Login">
+   <children>
+      <VBox alignment="CENTER" prefHeight="300.0" prefWidth="200.0" styleClass="back1">
+         <children>
+            <SVGPath content="M0 5v50h80v-50h-80zM75 50h-70v-40h70v40zM52.5 60h-25l-2.5 10-5 5h40l-5-5zM0 5v50h80v-50h-80zM75 50h-70v-40h70v40zM52.5 60h-25l-2.5 10-5 5h40l-5-5zM0 5v50h80v-50h-80zM75 50h-70v-40h70v40zM52.5 60h-25l-2.5 10-5 5h40l-5-5zM0 5v50h80v-50h-80zM75 50h-70v-40h70v40zM52.5 60h-25l-2.5 10-5 5h40l-5-5z" styleClass="svg-fill" />
+            <Label text="MINI POS">
+               <styleClass>
+                  <String fx:value="fs25" />
+                  <String fx:value="text-white" />
+               </styleClass>
+            </Label>
+         </children></VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER" prefHeight="72.0" prefWidth="300.0" spacing="5.0">
+               <children>
+                  <SVGPath content="M17.5 35c-9.665 0-17.5-7.835-17.5-17.5s7.835-17.5 17.5-17.5v0c9.665 0 17.5 7.835 17.5 17.5s-7.835 17.5-17.5 17.5v0zM12.25 10.5v3.5c0 2.899 2.351 5.25 5.25 5.25s5.25-2.351 5.25-5.25v0-3.5c0-2.899-2.351-5.25-5.25-5.25s-5.25 2.351-5.25 5.25v0zM5.863 25.27c2.548 3.771 6.807 6.217 11.637 6.217s9.090-2.446 11.606-6.168l0.032-0.049c-3.415-1.606-7.417-2.543-11.637-2.543s-8.223 0.937-11.809 2.615l0.171-0.072zM17.5 35c-9.665 0-17.5-7.835-17.5-17.5s7.835-17.5 17.5-17.5v0c9.665 0 17.5 7.835 17.5 17.5s-7.835 17.5-17.5 17.5v0zM12.25 10.5v3.5c0 2.899 2.351 5.25 5.25 5.25s5.25-2.351 5.25-5.25v0-3.5c0-2.899-2.351-5.25-5.25-5.25s-5.25 2.351-5.25 5.25v0zM5.863 25.27c2.548 3.771 6.807 6.217 11.637 6.217s9.090-2.446 11.606-6.168l0.032-0.049c-3.415-1.606-7.417-2.543-11.637-2.543s-8.223 0.937-11.809 2.615l0.171-0.072z" style="-fx-fill: #01579b#01579b;" />
+                  <Label text="MEMBER LOGIN">
+                     <styleClass>
+                        <String fx:value="fs30" />
+                        <String fx:value="text-primary" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </HBox>
+            <GridPane vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="165.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="115.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Login ID" />
+                  <TextField fx:id="loginID" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                  <Label text="Password" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#close" styleClass="custom-text-field" text="CLOSE" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <SVGPath content="M8 6.869l-5.657-5.657-1.131 1.131 5.657 5.657-5.657 5.657 1.131 1.131 5.657-5.657 5.657 5.657 1.131-1.131-5.657-5.657 5.657-5.657-1.131-1.131-5.657 5.657zM8 6.869l-5.657-5.657-1.131 1.131 5.657 5.657-5.657 5.657 1.131 1.131 5.657-5.657 5.657 5.657 1.131-1.131-5.657-5.657 5.657-5.657-1.131-1.131-5.657 5.657z" />
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#login" styleClass="custom-text-field" text="LOGIN" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <SVGPath content="M11.2 8l-4.8-4v2.4h-5.6v3.2h5.6v2.4l4.8-4zM13.6 13.6h-6.4v1.6h6.4c0.88 0 1.6-0.72 1.6-1.6v-11.2c0-0.88-0.72-1.6-1.6-1.6h-6.4v1.6h6.4v11.2zM11.2 8l-4.8-4v2.4h-5.6v3.2h5.6v2.4l4.8-4zM13.6 13.6h-6.4v1.6h6.4c0.88 0 1.6-0.72 1.6-1.6v-11.2c0-0.88-0.72-1.6-1.6-1.6h-6.4v1.6h6.4v11.2z" />
+                     </graphic>
+                  </Button>
+                  <PasswordField fx:id="password" styleClass="custom-text-field" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

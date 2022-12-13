@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;02-prototype-pattern&apos;&#x0D;&#x0A;- Original project: &apos;02-prototype-pattern&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.jdc.app.ConcretePrototype.java&#x0D;&#x0A;     com.jdc.app.IPrototype.java&#x0D;&#x0A;     com.jdc.app.PrototypeMain.java&#x0D;&#x0A;     com.jdc.app.SubclassPrototype.java" description="Delete elements" element1="/src&lt;com.jdc.app{PrototypeMain.java" element2="/src&lt;com.jdc.app{IPrototype.java" element3="/src&lt;com.jdc.app{SubclassPrototype.java" element4="/src&lt;com.jdc.app{ConcretePrototype.java" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1658737458506" subPackages="false" version="1.0"/>
+</session>

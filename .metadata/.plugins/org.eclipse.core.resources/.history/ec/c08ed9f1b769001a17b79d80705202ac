@@ -1,0 +1,21 @@
+package com.jdc.javaio;
+
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentData {
+	
+	private List<Student> output = new ArrayList<>();
+	private List<Student> persons = new ArrayList<>();
+	
+	public void read() {
+		try {
+			FileInputStream
+						
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

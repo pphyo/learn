@@ -1,0 +1,30 @@
+package com.jdc.que1;
+
+import java.util.Scanner;
+
+public class Question4 {
+	
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		
+		sc.close();
+	}
+	
+	static void checkColor(int[][] array) {
+		for()
+	}
+	
+	static int[][] dyArray() {
+		System.out.print("Enter array index two digit with space: ");
+		String data = sc.nextLine();
+		String[] init = data.split(" ");
+		if(init.length > 3) {
+			System.out.println("Please enter two digit with space.");
+		}
+		
+		return new int[Integer.parseInt(init[0])][Integer.parseInt(init[1])];
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.jdc.pos.controller;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
+public class CategoryEdit {
+	
+	@FXML
+	private Label title;
+	@FXML
+	private Label message;
+	@FXML
+	private TextField catName;
+
+	
+}

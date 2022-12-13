@@ -1,0 +1,19 @@
+.layout{
+	-fx-pref-width: 1280px;
+	-fx-pref-height: 800px;
+}
+
+.subLayout{
+	-fx-pref-width: 1040px;
+	-fx-pref-height: 700px;
+}
+
+.sale-layout{
+	-fx-pref-width: 1280px;
+	-fx-pref-height: 800px;
+}
+
+.sub-sale-layout{
+	-fx-pref-width: 1280px;
+	-fx-pref-height: 720px;
+}

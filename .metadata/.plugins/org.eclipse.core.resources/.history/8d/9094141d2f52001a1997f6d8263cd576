@@ -1,0 +1,29 @@
+package com.jdc.que1;
+
+//import java.io.Console;
+import java.util.Scanner;
+
+public class Question3 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter string: ");
+		String sentence = sc.nextLine();
+		
+		String[] array = sentence.split(" ");
+		
+		int count = 0;
+		
+		for(String arr : array) {
+			if(arr.equals("W") || arr.equals("w")) {
+				count++;
+			}
+		}
+		
+		System.out.println(count >= 5 ? "OK" : "NG");
+		sc.close();
+		
+	}
+
+}

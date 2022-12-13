@@ -1,0 +1,29 @@
+package com.jdc.pos.controller;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.TilePane;
+
+public class CategoryManagement {
+	
+	@FXML
+	private TextField catId;
+	@FXML
+	private TextField catName;
+	@FXML
+	private TilePane container;
+	
+	public void add() {
+
+	}
+	
+	public void search() {
+		
+	}
+	
+	public void clear() {
+		catId.clear();
+		catName.clear();
+	}
+
+}

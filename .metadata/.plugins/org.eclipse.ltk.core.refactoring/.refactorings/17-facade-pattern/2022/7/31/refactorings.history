@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.jdc.app.Student&apos; to &apos;Item&apos;&#x0D;&#x0A;- Original project: &apos;17-facade-pattern&apos;&#x0D;&#x0A;- Original element: &apos;com.jdc.app.Student&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jdc.app.Item&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Student&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.jdc.app{Student.java[Student" matchStrategy="1" name="Item" qualified="false" references="true" similarDeclarations="false" stamp="1659082953157" textual="false" version="1.0"/>
+</session>

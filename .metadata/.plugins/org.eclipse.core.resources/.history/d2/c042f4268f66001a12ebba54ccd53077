@@ -1,0 +1,26 @@
+package com.jdc.pos.controller;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
+import javafx.scene.layout.TilePane;
+
+public class CategoryManagement {
+	
+	@FXML
+	private ComboBox<Object> catName;
+	@FXML
+	private TilePane container;
+	
+	public void add() {
+
+	}
+	
+	public void search() {
+		
+	}
+	
+	public void clear() {
+		catName.setValue(null);
+	}
+
+}

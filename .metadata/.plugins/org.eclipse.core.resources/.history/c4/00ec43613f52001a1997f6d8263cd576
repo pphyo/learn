@@ -1,0 +1,46 @@
+package com.jdc.que1;
+
+import java.util.Scanner;
+
+public class Question4 {
+	
+	private static String[][] origin;
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+
+		checkColor();
+		
+		for(int i = 0; i < origin.length; i++) {
+			for(int j = 0; j < origin[i].length; j++) {
+				if(stringToInt(origin[i][j]) >= 128) {
+					System.out.print("1 ");
+				} else {
+					System.out.print("0 ");
+				}
+			}
+		}
+		
+
+	}
+	
+	static void checkColor() {
+		
+		System.out.print("Enter index with two digit with space: ");
+		String index = sc.nextLine();
+		
+		String[] indexArray = splitArray(index);
+		
+		origin = new String[Integer.parseInt(indexArray[0])][Integer.parseInt(indexArray[1])];
+		
+		for(int i = 0; i < origin.length; i++) {
+			for(int j = 0; j < origin[i].length; j++) {
+				origin[i][j] = sc.nextLine();
+			}
+		}
+	}
+
+	static String[] splitArray(String data) {
+		return data.split(" ");
+	}
+}

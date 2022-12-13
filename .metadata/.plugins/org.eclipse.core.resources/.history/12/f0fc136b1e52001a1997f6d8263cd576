@@ -1,0 +1,26 @@
+package com.solt.bounded;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class BoundedMain {
+
+	public static void main(String[] args) {
+		
+		Employee emp = new Employee();
+		emp.setName("Mg Mg");
+		Employee emp2 = new Employee();
+		emp2.setName("Thaw Thaw");
+		Employee emp3 = new Employee();
+		emp3.setName("D Thar");
+		
+		List<Employee> list = new ArrayList<>();
+		Collections.addAll(list, emp, emp2, emp3);
+		
+		Bounded<Employee> bounded = new Bounded<>();
+		bounded.showUpper(list);
+
+	}
+
+}

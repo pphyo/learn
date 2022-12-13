@@ -1,0 +1,30 @@
+package com.jdc.que1;
+
+import java.util.Scanner;
+
+public class Question4 {
+	
+	private static String[][] origin;
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+				
+		checkColor();
+
+	}
+	
+	static void checkColor() {
+		for(int i = 0; i < origin.length; i++) {
+			for(int j = 0; j < origin[i].length; j++) {
+				
+			}
+		}
+
+		System.out.println();
+	}
+
+	static String[] splitArray(String data) {
+		return data.split(" ");
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.jdc.pos.util;
+
+public enum Page {
+
+	Home("POS Home", "Home"),
+	CategoryManagement("Categories Management", "CategoryManagement"),
+	ProductManagement("Products Management", "ProductManagement"),
+	Sale("Sales", "Sale"),
+	Report("Report", "Report"),
+	Employee("Employees", "Employee");
+	
+	private String title;
+	private String viewName;
+	
+	private Page(String title, String viewName) {
+		this.title = title;
+		this.viewName = viewName;
+	}
+	
+	public String getTitle() {
+		return title;
+	}
+	
+	public String getViewName() {
+		return viewName.concat(".fxml");
+	}
+	
+}

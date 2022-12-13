@@ -1,0 +1,9 @@
+package com.jdc.bean;
+
+import javax.validation.ConstraintValidator;
+
+public class NameNotAdminValidator implements ConstraintValidator<NameNotAdmin, String>{
+
+	
+	
+}

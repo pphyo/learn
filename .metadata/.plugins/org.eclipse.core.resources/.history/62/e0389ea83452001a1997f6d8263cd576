@@ -1,0 +1,15 @@
+package com.jdc.que1;
+
+public class Question4 {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	static void dyArray(String data) {
+		
+		String[] array = data.split(" ");
+		
+	}
+
+}

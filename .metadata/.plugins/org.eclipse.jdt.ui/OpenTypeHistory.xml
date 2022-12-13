@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=proxy-pattern/src&lt;com.jdc.proxy{IProxy.java[IProxy" modifiers="513" timestamp="1584074356000"/>
+    <typeInfo handle="=01-factory-pattern/src&lt;com.jdc.app{IToy.java[IToy" modifiers="513" timestamp="1658722095393"/>
+    <typeInfo handle="=02-prototype-pattern/src&lt;com.jdc.app{Shape.java[Shape" modifiers="1025" timestamp="1658738704827"/>
+    <typeInfo handle="=03-abstract-factory-pattern/src&lt;com.jdc.app{IScreen.java[IScreen" modifiers="513" timestamp="1658740191401"/>
+    <typeInfo handle="=03-abstract-factory-pattern/src&lt;com.jdc.app{IMemory.java[IMemory" modifiers="513" timestamp="1658740192275"/>
+    <typeInfo handle="=03-abstract-factory-pattern/src&lt;com.jdc.app{IStorage.java[IStorage" modifiers="513" timestamp="1658740190035"/>
+    <typeInfo handle="=03-abstract-factory-pattern/src&lt;com.jdc.app{IComputer.java[IComputer" modifiers="513" timestamp="1658740466404"/>
+    <typeInfo handle="=05-decorator-pattern/src&lt;com.jdc.app{AbstractCoffeeDecorator.java[AbstractCoffeeDecorator" modifiers="1025" timestamp="1658820448501"/>
+    <typeInfo handle="=08-state-pattern/src&lt;com.jdc.app{State.java[State" modifiers="513" timestamp="1658825550097"/>
+    <typeInfo handle="=10-composite-pattern/src&lt;com.jdc.app{Composite.java[Composite" modifiers="1" timestamp="1658908986930"/>
+    <typeInfo handle="=01-factory-pattern/C:\/tools\/java\/jdk-17\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.lang(NullPointerException.class[NullPointerException" modifiers="33" timestamp="1628202936000"/>
+    <typeInfo handle="=01-factory-pattern/C:\/tools\/java\/jdk-17\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.nio.file(Files.class[Files" modifiers="49" timestamp="1628202936000"/>
+    <typeInfo handle="=01-factory-pattern/C:\/tools\/java\/jdk-17\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.util.function(ToIntFunction.class[ToIntFunction" modifiers="1537" timestamp="1628202936000"/>
+</typeInfoHistroy>

@@ -1,0 +1,15 @@
+package com.solt.bounded;
+
+import java.util.List;
+
+public class Bounded<T extends Employee> {
+
+	public void showUpper(List<T> list) {
+		
+		for(Employee e : list) {
+			System.out.println(e.getName().toUpperCase());
+		}
+		
+	}
+	
+}

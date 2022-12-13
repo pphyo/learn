@@ -1,0 +1,126 @@
+.back1{
+	-fx-background-color: #01579b;
+}
+
+.cartNo{
+	-fx-background-color: #000;
+	-fx-text-fill: #fff;
+}
+
+.header{
+	-fx-pref-height: 60px;
+	-fx-alignment: center ;
+	-fx-spacing: 5px;
+	-fx-background-color: #01579b;
+	-fx-font-size: 25px;
+}
+
+.header > * {
+	-fx-text-fill: #fff;
+	-fx-fill: #fff;
+}
+
+
+.fs20, GridPane Label{
+	-fx-font-size: 20px;
+}
+
+.fs25{
+	-fx-font-size: 25px;
+}
+
+.fs30{
+	-fx-font-size: 30px;
+}
+
+.fs40{
+	-fx-font-size: 40px;
+}
+
+Button{
+	-fx-pref-width: 100px;
+}
+
+.search{
+	-fx-pref-height: 50px;
+	-fx-alignment: center-left ;
+	-fx-spacing: 5px;
+}
+
+.search Button{
+	-fx-background-color: #01579b;
+	-fx-text-fill: #fff;
+}
+
+.transparent{
+	-fx-background-color: transparent;
+}
+
+.svg-fill, .search SVGPath{
+	-fx-fill: #fff;
+}
+
+.text-white{
+	-fx-text-fill: #fff;
+}
+
+.text-primary{
+	-fx-text-fill: #01579b;
+}
+
+.custom-text-field, GridPane TextField, 
+.search > ComboBox, .search > TextField,
+.check-box .box,
+.combo-box .combo-box-popup .list-view{
+	-fx-background-color: transparent;
+	-fx-border-style: solid;
+	-fx-border-radius: 5px;
+}
+
+.table-view .column-header{
+	-fx-background-color: #01579b;
+	-fx-border-color: #fff;
+}
+
+.table-view .column-header .label{
+	-fx-text-fill: #fff;
+}
+
+.text-field{
+	-fx-prompt-text-fill: darkgrey;
+}
+
+.item{
+	-fx-pref-width: 180px;
+	-fx-pref-height: 100px;
+	-fx-max-width: 180px;
+	-fx-max-height: 100px;
+	-fx-border-style: solid ;
+	-fx-border-radius: 5px;
+	-fx-font-size: 16px;
+}
+
+.left{
+	-fx-pref-width: 147px;
+	-fx-alignment: top-left;
+}
+
+.right{
+	-fx-pref-width : 27px;
+	-fx-alignment: center;
+}
+
+.right > Button{
+	-fx-min-width: 25px;
+	-fx-min-height: 25px;
+	-fx-max-height: 25px;
+	-fx-background-color: transparent;
+	-fx-border-style: solid;
+	-fx-border-radius: 5px;
+	-fx-font-size: 12px;
+}
+
+.date-picker .arrow-button{
+	-fx-background-color: transparent;
+	-fx-prompt-text-fill: darkgrey;
+}

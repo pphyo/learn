@@ -1,0 +1,24 @@
+package com.jdc.stream;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class StreamApp {
+
+	public static void main(String[] args) {
+		
+		List<Integer> list = new ArrayList<>();
+		
+		Collections.addAll(list, 6, 3, 5, 1, 4, 2, 7, 10, 9, 8, 5);
+		
+		list
+				.stream()
+				.filter(i -> i >= 5)
+				.sorted()
+				.distinct()
+				.forEach(System.out::println);
+		
+	}
+
+}

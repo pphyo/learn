@@ -1,0 +1,5 @@
+package com.jdc.stream;
+
+public class User {
+
+}

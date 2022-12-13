@@ -1,0 +1,27 @@
+package com.jdc.que1;
+
+import java.io.Console;
+
+public class Question6 {
+	
+	private static Console con = System.console();
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	static void compute() {
+		System.out.print("Enter time: ");
+		String[] times = con.readLine().split(" ");
+//		int homeToStationOne = toInt(times[0]);
+//		int StationOneToTwo = toInt(times[1]);
+//		int StationTwoToOffice = toInt(times[2]);
+		
+		System.out.print("");
+		
+	}
+	
+	static int toInt(String data) {
+		return Integer.parseInt(data);
+	}
+}

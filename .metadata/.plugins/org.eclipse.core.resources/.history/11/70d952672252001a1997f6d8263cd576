@@ -1,0 +1,52 @@
+package com.jdc.que1;
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	static void question1() {
+		System.out.print("Enter Number: ");
+		int number = input.nextInt();
+		if(number < 0)
+			System.out.println("Number must be positive ...");
+		System.out.printf("%03d", number);
+	}
+	
+	static void question2() {
+		
+		int[] numbers = new int[5];
+		
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.print("Enter Number: ");
+			numbers[i] = input.nextInt();
+		}
+		
+		int min = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE;
+		
+		for (int i = 0; i < numbers.length; i++) {
+			if(numbers[i] < min)
+				min = numbers[i];
+			if(numbers[i] > max)
+				max = numbers[i];
+		}
+		
+		System.out.println(max);
+		System.out.println(min);
+	}
+	
+	static void question3() {
+		String letter = input.nextLine();
+		letter = letter.replace(" ", "");
+		char[] array = letter.toCharArray();
+		int count = 0;
+		for(char c : array) {
+			if(c == 'W' || c == 'w')
+				count++;
+		}
+		System.out.println(count >= 5 ? "OK" : "NG");
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.jdc.que1;
+
+import java.util.Scanner;
+
+public class Question2 {
+	
+	private static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	static void findMinMax(int[] array) {
+		
+	}
+	
+	static int[] createArray() {
+		int[] intArray = new int[5];
+		
+		System.out.println("Enter number: ");
+		int number1 = sc.nextInt();
+		
+		return null;
+	}
+
+}

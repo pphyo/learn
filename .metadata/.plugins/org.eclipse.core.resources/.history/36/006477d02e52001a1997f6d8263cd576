@@ -1,0 +1,27 @@
+package com.jdc.que1;
+
+import java.io.Console;
+
+public class Question3 {
+
+	public static void main(String[] args) {
+		
+		Console con = System.console();
+		System.out.print("Enter string: ");
+		String sentence = con.readLine();
+		
+		String[] array = sentence.split(" ");
+		
+		int count = 0;
+		
+		for(String arr : array) {
+			if(arr == "W" || arr == "w") {
+				count++;
+			}
+		}
+		
+		System.out.println(count >= 5 ? "OK" : "NG");
+
+	}
+
+}
